@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css -->
+   <style>
+    .manrope{
+      font-family: "Manrope", sans-serif;
+    }
+    body{
+      overflow-x: hidden;
+    }
+   </style>
+
+</head>
+<body class="">  
+  <!-- header start -->
+  <header class="manrope fixed w-full z-20 top-0 start-0">
+    <section class="w-full">
+      <div class="navbar bg-orange-50 p-10">
+        
+        <!-- Navbar Start -->
+        <div class="navbar-start">
+          <a href="blog.html" class="mx-3 text-xl font-extrabold btn bg-lime-500">Blog</a>
+        </div>
+        
+        <!-- Navbar Center -->
+        <div class="navbar-center hidden lg:flex">
+          <img src="assets/logo.png" alt="Logo">
+          <h1 class="font-extrabold ml-5">Donate Bangladesh</h1>
+        </div>
+        
+        <!-- Navbar End -->
+        <div class="navbar-end">
+          <img src="assets/coin.png" alt="Coin">
+          <h1 class="pl-2"><span id="amont">55000</span> BDT</h1>
+        </div>
+
+      </div>
+    </section>
+  </header>
+      <!-- header start --> 
+
+      <!-- Accordion start -->
+       <section class="container mx-auto p-20 mt-28">
+        <h1 class="font-extrabold py-5 text-4xl">Important FAQ</h1>
+        <div class="collapse collapse-arrow bg-base-200 mt-10">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content">
+            <p>
+              The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document (like HTML or XML) as a tree of objects, allowing programs to manipulate the document’s structure, style, and content
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200  mt-10">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To select an element from the DOM, you can use several methods provided by the DOM API. Here are some of the most common ones:
+              <br>
+              1.By ID,<br> 2.By Class Name,<br> 3.By Tag Name
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mt-10">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What is event delegation in the context of the DOM, and why is it useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Event delegation is a technique in the DOM that leverages event bubbling to handle events at a higher level in the DOM tree rather than directly on the target element. This means you can manage events more efficiently by attaching a single event listener to a parent element instead of multiple listeners to individual child elements.
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mt-10">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you mainpulate an element's attributes and styles using the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              To manipulate an element’s attributes and styles using the DOM, you can use various methods and properties provided by JavaScript. Here are some common techniques:
+              <br>
+              1.Get an Attribute
+              <br>
+              2.Set an Attribute
+            </p>
+          </div>
+        </div>
+       </section>
+       <!-- Accordion end -->
+
+  
+
+
+
+    
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bot-green-bg': '#B4F461'            
+          }
+        }
+      }
+    }
+  </script>
+  
+</body>
+</html>
